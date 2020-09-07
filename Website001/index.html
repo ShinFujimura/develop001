@@ -1,0 +1,222 @@
+<!--20190614_1948-->
+<!-- https://www.coolwebwindow.com/html5/ -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>MyPortfolio</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.smoothscroll.js"></script>
+<script src="js/jquery.scrollshow.js"></script>
+<script src="js/jquery.rollover.js"></script>
+<script src="js/jquery.slidewide.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10, headerfix : $('header')});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slidewide({
+		touch         : true,
+		touchDistance : '80',
+		autoSlide     : true,
+		repeat        : true,
+		interval      : 3000,
+		duration      : 500,
+		easing        : 'swing',
+		imgHoverStop  : true,
+		navHoverStop  : true,
+		prevPosition  : 0,
+		nextPosition  : 0,
+		viewSlide     : 1,
+		baseWidth     : 980,
+		navImg        : false,
+		navImgCustom  : false,
+		navImgSuffix  : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<div class="inner">
+		<div class="header_left">
+			<p class="summary">
+			制作したポートフォリオ!!
+			</p>
+			<h1><a href=""><img src="images/logo.png" alt="サイト名"></a></h1>
+		</div><!-- /.header_left -->
+		<div class="header_right">
+			<div class="header_nav"><div class="header_tel">
+			<span class="phonenumber">0120-000-000</span><br><span class="open">受付時間：平日9：00～17：00</span>
+			</div><!-- /.header_tel -->
+				<div class="header_require"><a href="">資料請求</a></div><!-- /.header_require -->
+				<div class="header_contact"><a href="">お問い合わせ</a></div><!-- /.header_require -->
+			</div><!-- /.header_nav -->
+		</div><!-- /.header_right -->
+	</div><!-- /.inner -->
+	<div id="spMenu"><span id="navBtn"><span id="navBtnIcon"></span></span></div>
+	<nav>
+		<div class="inner">
+			<ul class="gnav">
+				<li><a href="">ホーム</a></li>
+				<li class="subnav"><a href="">会社情報</a>
+					<ul>
+						<li><a href="">会社概要</a></li>
+						<li><a href="">企業理念</a></li>
+						<li><a href="">CSR活動</a></li>
+						<li><a href="">IR情報</a></li>
+					</ul>
+				</li>
+				<li class="subnav"><a href="">商品情報</a>
+					<ul>
+						<li class="subnav"><a href="">商品A</a>
+							<ul>
+								<li><a href="">商品A-1</a></li>
+								<li><a href="">商品A-2</a></li>
+								<li><a href="">商品A-3</a></li>
+							</ul>
+						</li>
+						<li class="subnav"><a href="">商品B</a>
+							<ul>
+								<li><a href="">商品B-1</a></li>
+								<li><a href="">商品B-2</a></li>
+								<li><a href="">商品B-3</a></li>
+							</ul>
+						</li>
+						<li class="subnav"><a href="">商品C</a>
+							<ul>
+								<li><a href="">商品C-1</a></li>
+								<li><a href="">商品C-2</a></li>
+								<li><a href="">商品C-3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">採用情報</a></li>
+				<li><a href="">お問い合わせ</a></li>
+				<!--
+				<li class="subnav"><a href="sample.html">サンプル</a>
+					<ul>
+						<li><a href="sample.html">サンプル（2カラム）</a></li>
+						<li><a href="wide.html">サンプル（1カラム）</a></li>
+						<li><a href="sample.html#sample">ページ外リンク</a></li>
+						<li class="subnav"><a href="sample.html">サブメニューリンク</a>
+							<ul>
+								<li><a href="">サブメニュー</a></li>
+								<li><a href="">サブメニュー</a></li>
+								<li><a href="">サブメニュー</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				-->
+			</ul>
+		</div><!-- /.inner -->
+	</nav>
+</header>
+
+<div class="slide">
+	<ul class="slideInner">
+		<li><a href=""><img src="images/photo01.jpg" alt=""></a></li>
+		<li><a href=""><img src="images/photo02.jpg" alt=""></a></li>
+		<li><a href=""><img src="images/photo03.jpg" alt=""></a></li>
+	</ul>
+	<div class="slidePrev"><img src="images/nav_prev.png" alt="前へ"></div>
+	<div class="slideNext"><img src="images/nav_next.png" alt="次へ"></div>
+	<div class="controlNav"></div>
+</div><!-- /.slide -->
+
+<div id="contents">
+	<div id="main">
+		<h3 id="news">新着情報</h3>
+		<dl class="info">
+			<dt><span>20XX-01-01</span></dt>
+			<dd>
+				 更新情報。更新情報。更新情報。更新情報。更新情報。更新情報。
+			</dd>
+			<dt><span>20XX-01-01</span></dt>
+			<dd>
+				 更新情報。更新情報。更新情報。更新情報。更新情報。更新情報。
+			</dd>
+		</dl>
+		<div class="col_two_one">
+			<h3>商品一覧</h3>
+			<ul>
+				<li>
+				<img src="images/photo.png" alt="">
+				<h4>商品名</h4>
+				<p>紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文</p>
+				</li>
+				<li>
+				<img src="images/photo.png" alt="">
+				<h4>商品名</h4>
+				<p>紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文</p>
+				</li>
+				<li>
+				<img src="images/photo.png" alt="">
+				<h4>商品名</h4>
+				<p>紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文</p>
+				</li>
+				 <li>
+				<img src="images/photo.png" alt="">
+				<h4>商品名</h4>
+				<p>紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文紹介文</p>
+				</li>
+			</ul>
+			<p class="textR"><a href="">&raquo;もっと見る</a></p>
+		</div><!-- /.staff -->
+	</div><!-- /#main -->
+	<div id="sub">
+		<h3>右サイド01</h3>
+		<ul class="submenu">
+			<li><a href="">リスト１</a></li>
+			<li><a href="">リスト２</a></li>
+			<li><a href="">リスト３</a></li>
+			<li><a href="">リスト４</a></li>
+			<li><a href="">リスト５</a></li>
+		</ul>
+		<h3>右サイド02</h3>
+		<p>
+		サブコンテンツはバナーを掲載するのに便利。
+		</p>
+		<ul class="bnr">
+			<li><a href=""><img src="images/banner.png" alt=""></a></li>
+			<li><a href=""><img src="images/banner.png" alt=""></a></li>
+			<li><a href=""><img src="images/banner.png" alt=""></a></li>
+			<li><a href=""><img src="images/banner.png" alt=""></a></li>
+		</ul>
+	</div><!-- /#sub -->
+</div><!-- /#contents -->
+
+<footer>
+	<div class="footmenu">
+		<ul>
+			<li><a href="">HOME</a></li>
+			<li><a href="">会社情報</a></li>
+			<li><a href="">商品情報</a></li>
+			<li><a href="">採用情報</a></li>
+			<li><a href="">サイトポリシーについて</a></li>
+			<li><a href="">プライバシーポリシーについて</a></li>
+			<li><a href="">お問い合わせ</a></li>
+			<li><a href="sample.html">サイトマップ</a></li>
+		</ul>
+	</div><!-- /.footmenu -->
+	<div class="copyright"></div><!-- /.copyright -->
+</footer>
+
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+</body>
+</html>
+				
+						
